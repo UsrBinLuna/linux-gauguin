@@ -21,13 +21,14 @@
 #include "pmk8350.dtsi"
 
 / {
-	model = "Fairphone 4";
-	compatible = "fairphone,fp4", "qcom,sm7225";
+
+	model = "Xiaomi Mi 10T Lite / Mi 10i / Redmi Note 9 Pro 5G";
+	compatible = "xiaomi,gauguin", "xiaomi,gauguininpro", "xiaomi,gauguinpro" "qcom,sm7225";
 	chassis-type = "handset";
 
 	/* required for bootloader to select correct board */
 	qcom,msm-id = <434 0x10000>, <459 0x10000>;
-	qcom,board-id = <8 32>;
+	qcom,board-id = <0x23 0>;
 
 	aliases {
 		serial0 = &uart9;
